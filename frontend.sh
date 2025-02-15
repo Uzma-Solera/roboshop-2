@@ -1,4 +1,4 @@
-dnf module disable nginx -y
+source nginx.function.sh
 dnf module enable nginx:1.24 -y
 dnf install nginx -y
 cp frontend.conf /etc/nginx/frontend.conf
@@ -9,5 +9,3 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip
 
 
-systemctl enable nginx
-systemctl start nginx
