@@ -4,7 +4,8 @@
 # }
 example() {
   echo example function
+  echo value of x-$x
 }
 
-
+x=10
 example
