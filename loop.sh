@@ -1,4 +1,3 @@
-fruits=[apple,orange,mango]
-for fruit in "${Fruits[@]}"; do
-  echo "$fruit"
+for name in Orange Apple Banana;do
+  echo Fruit Name - $name
 done
